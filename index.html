@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Fullpage scroll pure js</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css">
+      <link rel="stylesheet" href="css/milligram.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/glitch.css">
+   </head>
+   <body>
+      <div id="fullpage">
+         <div class="section" id="home">
+            <div>
+               <h1 style="color:black">Hello World</h1>
+            </div>
+            <div class="glitch imgloaded">
+               <div class="glitch__img"></div>
+               <div class="glitch__img"></div>
+               <div class="glitch__img"></div>
+               <div class="glitch__img"></div>
+               <div class="glitch__img"></div>
+            </div>
+         </div>
+         <div class="section" id="about">
+            <p>about</p>
+         </div>
+         <div class="section " id="portfolio">
+            <p>portfolio</p>
+         </div>
+         <div class="section " id="education">
+            <p>education</p>
+         </div>
+         <div class="section " id="contact">
+            <p>contact</p>
+         </div>
+      </div>
+      <script src="js/pure_fullpage.js" charset="utf-8"></script>
+      <script type="text/javascript">
+         fullpage.initialize('#fullpage', {
+           animateAnchor:true,
+           autoScrolling:true,
+           responsive: 900,
+           fitSection: false,
+           navigation:true,
+           continuousVertical:false,
+         });
+      </script>
+   </body>
+</html>
