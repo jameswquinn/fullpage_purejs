@@ -38,12 +38,36 @@
       <script src="js/pure_fullpage.js" charset="utf-8"></script>
       <script type="text/javascript">
          fullpage.initialize('#fullpage', {
+           //menu:'#example',
+           //navigationTooltips: ['firstSlide', 'secondSlide'],
+           //showActiveTooltip: true,
+           //slidesNavigation: false,
+           //slidesNavPosition: 'bottom',
+           //css3: true,
+           //fitToSection: true,
+           //fitToSectionDelay: 1000,
+           //easingcss3: 'ease',
+           //loopHorizontal: true,
+           //touchSensitivity: 15,
+           //recordHistory: true,
+           //controlArrows: true,
+           //sectionSelector: '.section',
+           //slideSelector: '.slide',
+           navigationPosition: 'right',
+           keyboardScrolling: true,
+           easing: 'easeInOutCubic',
+           scrollBar: false,
+           scrollingSpeed: 600,
            animateAnchor:true,
            autoScrolling:true,
-           responsive: 900,
-           fitSection: false,
            navigation:true,
-           continuousVertical:false,
+           //events
+	         //onLeave: function(origin, destination, direction){},
+           //afterLoad: function(origin, destination, direction){},
+           //afterRender: function(){},
+           //afterResize: function(width, height){},
+           //afterSlideLoad: function(section, origin, destination, direction){},
+           //onSlideLeave: function(section, origin, destination, direction){}
          });
       </script>
    </body>
