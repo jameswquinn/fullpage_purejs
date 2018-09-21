@@ -3,38 +3,42 @@
    <head>
       <meta charset="UTF-8">
       <title>Fullpage scroll pure js</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css">
-      <link rel="stylesheet" href="css/milligram.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/sanitize.css">
+      <link rel="stylesheet" href="css/skeliton.css">
+      <link rel="stylesheet" href="css/fullpage.css">
       <link rel="stylesheet" href="css/glitch.css">
    </head>
    <body>
       <div id="fullpage">
          <div class="section" id="home">
-            <div>
-               <h1 style="color:black">Hello World</h1>
-            </div>
-            <div class="glitch imgloaded">
+            <div class="glitch is_loaded">
                <div class="glitch__img"></div>
                <div class="glitch__img"></div>
                <div class="glitch__img"></div>
                <div class="glitch__img"></div>
                <div class="glitch__img"></div>
             </div>
-         </div>
-         <div class="section" id="about">
-            <p>about</p>
          </div>
          <div class="section " id="portfolio">
-            <p>portfolio</p>
+            <h1>portfolio</h1>
          </div>
-         <div class="section " id="education">
-            <p>education</p>
-         </div>
-         <div class="section " id="contact">
-            <p>contact</p>
+         <div class="section " id="experimental">
+            <h1>experimental</h1>
+        </div>
+         <div class="section" id="about">
+            <h1>about</h1>
+            <div>
+               <a href="mailto:hello@jamesquinn.com">hello@jamesquinn.com</a>
+            </div>
+            <div>
+               <a href="https://twitter.com/messages/compose?recipient_id=1043183664308383745&text=hello"
+                  class="twitter-dm-button" data-screen-name="@jameswquinn">
+               @jameswquinn</a>
+            </div>
+            <a href="Resume.pdf">Download my Resume</a>
          </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
       <script src="js/pure_fullpage.js" charset="utf-8"></script>
       <script type="text/javascript">
          fullpage.initialize('#fullpage', {
@@ -62,13 +66,15 @@
            autoScrolling:true,
            navigation:true,
            //events
-	         //onLeave: function(origin, destination, direction){},
+          //onLeave: function(origin, destination, direction){},
            //afterLoad: function(origin, destination, direction){},
            //afterRender: function(){},
            //afterResize: function(width, height){},
            //afterSlideLoad: function(section, origin, destination, direction){},
            //onSlideLeave: function(section, origin, destination, direction){}
          });
+         const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+         observer.observe();
       </script>
    </body>
 </html>
