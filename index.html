@@ -11,10 +11,7 @@
    <body>
       <div id="fullpage">
          <div class="section" id="home">
-            <div>
-               <h1 style="color:black">Hello World</h1>
-            </div>
-            <div class="glitch imgloaded">
+            <div class="glitch is_loaded">
                <div class="glitch__img"></div>
                <div class="glitch__img"></div>
                <div class="glitch__img"></div>
@@ -23,10 +20,29 @@
             </div>
          </div>
          <div class="section " id="portfolio">
+<<<<<<< HEAD
             <p>portfolio</p>
          </div>
          <div class="section " id="experimental">
             <p>experimental</p>
+=======
+            <h1>portfolio</h1>
+         </div>
+         <div class="section " id="experimental">
+            <h1>experimental</h1>
+        </div>
+         <div class="section" id="about">
+            <h1>about</h1>
+            <div>
+               <a href="mailto:hello@jamesquinn.com">hello@jamesquinn.com</a>
+            </div>
+            <div>
+               <a href="https://twitter.com/messages/compose?recipient_id=1043183664308383745&text=hello"
+                  class="twitter-dm-button" data-screen-name="@jameswquinn">
+               @jameswquinn</a>
+            </div>
+            <a href="Resume.pdf">Download my Resume</a>
+>>>>>>> 6aedc66e65ecc0c4e37d4d92b47a738fa3a02b62
          </div>
          <div class="section" id="about">
             <p>about</p>
@@ -41,6 +57,7 @@
 <a href="Resume.pdf">Download my Resume</a>
           </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
       <script src="js/pure_fullpage.js" charset="utf-8"></script>
       <script type="text/javascript">
          fullpage.initialize('#fullpage', {
@@ -68,13 +85,19 @@
            autoScrolling:true,
            navigation:true,
            //events
+<<<<<<< HEAD
 	         //onLeave: function(origin, destination, direction){},
+=======
+          //onLeave: function(origin, destination, direction){},
+>>>>>>> 6aedc66e65ecc0c4e37d4d92b47a738fa3a02b62
            //afterLoad: function(origin, destination, direction){},
            //afterRender: function(){},
            //afterResize: function(width, height){},
            //afterSlideLoad: function(section, origin, destination, direction){},
            //onSlideLeave: function(section, origin, destination, direction){}
          });
+         const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+         observer.observe();
       </script>
    </body>
 </html>
